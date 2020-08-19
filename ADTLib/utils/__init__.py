@@ -13,7 +13,7 @@ import subprocess
 from fpdf import FPDF
 import ADTLib
 import tensorflow as tf
-from tensorflow.contrib import rnn
+from tensorflow.keras.layers import RNN as rnn
 
 def spec(file):
     return madmom.audio.spectrogram.Spectrogram(file, frame_size=2048, hop_size=512, fft_size=2048,num_channels=1)
